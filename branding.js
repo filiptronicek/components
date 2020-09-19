@@ -4,9 +4,9 @@ class Brand extends HTMLElement {
         if (!this.hasAttribute('profiles')) {
             this.setAttribute('profiles', "filiptronicek");
         }
-        const ppl = this.getAttribute('profiles').split(",")
+        const ppl = this.getAttribute('profiles').split(",");
         let pplStr;
-        pplStr = ppl.join(", ").replace(",", " &")
+        pplStr = ppl.join(", ").replace(",", " &");
         this.innerHTML = `
         <footer>
             <hr />
